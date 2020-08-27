@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverse = getInverse)
 }
 
-#This fnc calculates the inverse and retrieve it from the cache if the produced matrix is NULL
+#This fnc calculates the inverse and retrieve it from the cache if The inverse has already been calculated.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   j <- x$getInverse()
